@@ -1,14 +1,11 @@
 package com.andersen.sadwyn.randomusertest.ui.adapters;
 
-import android.app.PendingIntent;
 import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.andersen.sadwyn.randomusertest.databinding.ProgressItemBinding;
 import com.andersen.sadwyn.randomusertest.databinding.UserListItemBinding;
@@ -29,19 +26,23 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         users = new ArrayList<>();
     }
 
+    @BindingAdapter("bind:src")
+    public static void bindThumbnail(CircleImageView imageView, String src) {
+        Glide.with(imageView.getContext()).load(src).into(imageView);
+    }
+
     public void addUsers(List<User> users) {
         this.users.addAll(users);
-        notifyItemRangeInserted(this.users.size()-1, users.size());
+        notifyItemRangeInserted(this.users.size() - 1, users.size());
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        if(viewType == ITEM) {
+        if (viewType == ITEM) {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
             UserListItemBinding binding = UserListItemBinding.inflate(inflater, parent, false);
             return new UserViewHolder(binding.getRoot());
-        }
-        else  {
+        } else {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
             ProgressItemBinding binding = ProgressItemBinding.inflate(inflater, parent, false);
             return new ProgressViewHolder(binding.getRoot());
@@ -50,12 +51,11 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if(holder instanceof UserViewHolder){
+        if (holder instanceof UserViewHolder) {
             UserViewHolder userViewHolder = (UserViewHolder) holder;
-           userViewHolder.binding.setUser(users.get(holder.getAdapterPosition()));
-        }
-        else if(holder instanceof ProgressViewHolder) {
-            ProgressViewHolder progressViewHolder = (ProgressViewHolder)holder;
+            userViewHolder.binding.setUser(users.get(holder.getAdapterPosition()));
+        } else if (holder instanceof ProgressViewHolder) {
+            ProgressViewHolder progressViewHolder = (ProgressViewHolder) holder;
             progressViewHolder.binding.progressBar.setVisibility(View.VISIBLE);
         }
     }
@@ -67,7 +67,7 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
-        return position != getItemCount()-1 ? ITEM : PROGRESS;
+        return position != getItemCount() - 1 ? ITEM : PROGRESS;
     }
 
     private class UserViewHolder extends RecyclerView.ViewHolder {
@@ -77,11 +77,6 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             super(itemView);
             binding = DataBindingUtil.bind(itemView);
         }
-    }
-
-    @BindingAdapter("bind:src")
-    public static void bindThumbnail(CircleImageView imageView, String src){
-        Glide.with(imageView.getContext()).load(src).into(imageView);
     }
 
     private class ProgressViewHolder extends RecyclerView.ViewHolder {

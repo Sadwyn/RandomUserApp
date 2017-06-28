@@ -8,8 +8,12 @@ import com.andersen.sadwyn.randomusertest.presentation.view.blank.MainView;
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
 
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 @InjectViewState
@@ -30,7 +34,10 @@ public class MainPresenter extends MvpPresenter<MainView> {
                             getViewState().showProgressBar(false);
                             getViewState().setUsersToAdapter(response.getUsers());
                         },
-                        throwable -> Log.i(ERROR, throwable.getMessage())));
+                        throwable -> {
+                            Log.i(ERROR, throwable.getMessage());
+                            getViewState().showProgressBar(false);
+                        }));
     }
 
     public void loadMoreUsers() {
@@ -38,7 +45,10 @@ public class MainPresenter extends MvpPresenter<MainView> {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(response -> getViewState().setUsersToAdapter(response.getUsers()),
-                        throwable -> Log.i(ERROR, throwable.getMessage())));
+                        throwable -> {
+                            Log.i(ERROR, throwable.getMessage());
+                            getViewState().showProgressBar(false);
+                        }));
     }
 
     @Override
