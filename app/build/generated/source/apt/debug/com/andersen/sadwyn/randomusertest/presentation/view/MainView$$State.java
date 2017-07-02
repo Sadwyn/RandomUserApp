@@ -43,6 +43,22 @@ public class MainView$$State extends MvpViewState<com.andersen.sadwyn.randomuser
 		mViewCommands.afterApply(showProgressBarCommand);
 	}
 
+	@Override
+	public  void showDialogRetry() {
+		ShowDialogRetryCommand showDialogRetryCommand = new ShowDialogRetryCommand();
+		mViewCommands.beforeApply(showDialogRetryCommand);
+
+		if (mViews == null || mViews.isEmpty()) {
+			return;
+		}
+
+		for(com.andersen.sadwyn.randomusertest.presentation.view.MainView view : mViews) {
+			view.showDialogRetry();
+		}
+
+		mViewCommands.afterApply(showDialogRetryCommand);
+	}
+
 
 	public class SetUsersToAdapterCommand extends ViewCommand<com.andersen.sadwyn.randomusertest.presentation.view.MainView> {
 		public final java.util.List<com.andersen.sadwyn.randomusertest.model.pojos.User> users;
@@ -69,6 +85,17 @@ public class MainView$$State extends MvpViewState<com.andersen.sadwyn.randomuser
 		@Override
 		public void apply(com.andersen.sadwyn.randomusertest.presentation.view.MainView mvpView) {
 			mvpView.showProgressBar(isShow);
+		}
+	}
+
+	public class ShowDialogRetryCommand extends ViewCommand<com.andersen.sadwyn.randomusertest.presentation.view.MainView> {
+		ShowDialogRetryCommand() {
+			super("showDialogRetry", com.arellomobile.mvp.viewstate.strategy.AddToEndStrategy.class);
+		}
+
+		@Override
+		public void apply(com.andersen.sadwyn.randomusertest.presentation.view.MainView mvpView) {
+			mvpView.showDialogRetry();
 		}
 	}
 }

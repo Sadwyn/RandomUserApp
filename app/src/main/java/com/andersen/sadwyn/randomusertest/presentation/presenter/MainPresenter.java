@@ -33,6 +33,7 @@ public class MainPresenter extends MvpPresenter<MainView> {
                         throwable -> {
                             Log.i(ERROR, throwable.getMessage());
                             getViewState().showProgressBar(false);
+                            getViewState().showDialogRetry();
                         }));
     }
 
@@ -44,6 +45,7 @@ public class MainPresenter extends MvpPresenter<MainView> {
                         throwable -> {
                             Log.i(ERROR, throwable.getMessage());
                             getViewState().showProgressBar(false);
+                            getViewState().showDialogRetry();
                         }));
     }
 

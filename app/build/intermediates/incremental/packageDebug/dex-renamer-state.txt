@@ -1,4 +1,4 @@
-#Sun Jul 02 17:32:29 EEST 2017
+#Sun Jul 02 17:48:34 EEST 2017
 base.0=C\:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

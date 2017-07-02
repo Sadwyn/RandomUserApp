@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -81,6 +83,19 @@ public class MainActivity extends MvpActivity implements MainView, UserAdapter.O
     @Override
     public void showProgressBar(boolean isShow) {
         binding.progressBarFirstLoad.setVisibility(isShow ? View.VISIBLE : View.GONE);
+    }
+
+    @Override
+    public void showDialogRetry() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
+                .setTitle("Something went wrong")
+                .setCancelable(false)
+                .setMessage("Please check your connection and press RETRY")
+                .setNeutralButton("RETRY", (dialog, which) -> {
+                    mMainPresenter.loadMoreUsers();
+                    dialog.dismiss();
+                });
+        alertDialog.show();
     }
 
     @Override

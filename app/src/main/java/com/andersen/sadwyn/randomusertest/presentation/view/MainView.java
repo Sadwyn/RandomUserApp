@@ -8,4 +8,5 @@ import java.util.List;
 public interface MainView extends MvpView {
     void setUsersToAdapter(List<User> users);
     void showProgressBar(boolean isShow);
+    void showDialogRetry();
 }
