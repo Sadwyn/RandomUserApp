@@ -1,19 +1,15 @@
-package com.andersen.sadwyn.randomusertest.presentation.presenter.blank;
+package com.andersen.sadwyn.randomusertest.presentation.presenter;
 
 
 import android.util.Log;
 
 import com.andersen.sadwyn.randomusertest.model.retrofit.ServerTask;
-import com.andersen.sadwyn.randomusertest.presentation.view.blank.MainView;
+import com.andersen.sadwyn.randomusertest.presentation.view.MainView;
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
 
-import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 @InjectViewState

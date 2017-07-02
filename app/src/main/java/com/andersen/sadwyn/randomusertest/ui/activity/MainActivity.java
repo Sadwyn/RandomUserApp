@@ -6,25 +6,31 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.andersen.sadwyn.randomusertest.R;
 import com.andersen.sadwyn.randomusertest.databinding.ActivityMainBinding;
 import com.andersen.sadwyn.randomusertest.model.pojos.User;
-import com.andersen.sadwyn.randomusertest.presentation.presenter.blank.MainPresenter;
-import com.andersen.sadwyn.randomusertest.presentation.view.blank.MainView;
+import com.andersen.sadwyn.randomusertest.presentation.presenter.MainPresenter;
+import com.andersen.sadwyn.randomusertest.presentation.view.DetailView;
+import com.andersen.sadwyn.randomusertest.presentation.view.MainView;
 import com.andersen.sadwyn.randomusertest.ui.adapters.UserAdapter;
 import com.arellomobile.mvp.MvpActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 
+import org.parceler.Parcels;
+
 import java.util.List;
 
-public class MainActivity extends MvpActivity implements MainView {
+public class MainActivity extends MvpActivity implements MainView, UserAdapter.OnUserClickListener {
     public static final String TAG = "MainActivity";
+    public static final String USER_EXTRA = "USER_EXTRA";
     @InjectPresenter
     MainPresenter mMainPresenter;
-    ActivityMainBinding binding;
-    UserAdapter adapter;
+    private UserAdapter adapter;
+    private ActivityMainBinding binding;
 
     public static Intent getIntent(final Context context) {
         Intent intent = new Intent(context, MainActivity.class);
@@ -40,11 +46,10 @@ public class MainActivity extends MvpActivity implements MainView {
     }
 
     private void initViews() {
-        adapter = new UserAdapter();
+        adapter = new UserAdapter(this, this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         binding.userListRecycler.setLayoutManager(layoutManager);
         binding.userListRecycler.setAdapter(adapter);
-
 
         binding.userListRecycler.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -57,7 +62,7 @@ public class MainActivity extends MvpActivity implements MainView {
     }
 
     boolean isLastVisible(LinearLayoutManager layoutManager) {
-        int pos = layoutManager.findLastCompletelyVisibleItemPosition();
+        int pos = layoutManager.findLastVisibleItemPosition();
         int numItems = binding.userListRecycler.getAdapter().getItemCount() - 1;
         return (pos >= numItems);
     }
@@ -76,5 +81,12 @@ public class MainActivity extends MvpActivity implements MainView {
     @Override
     public void showProgressBar(boolean isShow) {
         binding.progressBarFirstLoad.setVisibility(isShow ? View.VISIBLE : View.GONE);
+    }
+
+    @Override
+    public void onUserClick(User user) {
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(USER_EXTRA, Parcels.wrap(user));
+        startActivity(intent);
     }
 }

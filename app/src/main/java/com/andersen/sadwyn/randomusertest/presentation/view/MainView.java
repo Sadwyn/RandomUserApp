@@ -1,4 +1,4 @@
-package com.andersen.sadwyn.randomusertest.presentation.view.blank;
+package com.andersen.sadwyn.randomusertest.presentation.view;
 
 import com.andersen.sadwyn.randomusertest.model.pojos.User;
 import com.arellomobile.mvp.MvpView;

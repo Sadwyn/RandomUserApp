@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RandomUserTest</string>
+    <string name="gender">Gender: %s </string>
+
+    <string name="city">City: %s</string>
+    <string name="street">Street: %s</string>
+    <string name="state">State:    %s</string>
+    <string name="postcode">Postcode:    %s</string>
 </resources>
