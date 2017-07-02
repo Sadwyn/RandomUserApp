@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jul 02 18:21:23 EEST 2017
+#Sun Jul 02 18:33:36 EEST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_activity_chooser_view_list_item.xml

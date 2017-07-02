@@ -395,7 +395,14 @@
                     "endOffset": 2316
                 },
                 "from": {
-                    "file": "C:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\src\\main\\res\\values\\colors.xml"
+                    "file": "C:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 157,
+                        "endColumn": 45,
+                        "endOffset": 198
+                    }
                 }
             },
             {
@@ -426,14 +433,7 @@
                     "endOffset": 2414
                 },
                 "from": {
-                    "file": "C:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\src\\main\\res\\values\\colors.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 105,
-                        "endColumn": 50,
-                        "endOffset": 151
-                    }
+                    "file": "C:\\AndroidTools\\AndroidProjects\\RandomUserTest\\app\\src\\main\\res\\values\\colors.xml"
                 }
             },
             {

@@ -2,13 +2,13 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="xhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1499008932391"
+    timestamp="1499009615580"
     token="-2798195617575523326"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
@@ -24,39 +24,36 @@
         duration="0" />
 
     <artifact
-        location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
         build-mode="FULL"
-        timestamp="1499008830649"
+        timestamp="1499009451753"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
+            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -67,14 +64,17 @@
         <artifact
             location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1499008932391"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1499009615580"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\AndroidTools\AndroidProjects\RandomUserTest\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
