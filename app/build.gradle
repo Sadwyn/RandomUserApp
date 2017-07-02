@@ -59,6 +59,7 @@ dependencies {
     compile "org.parceler:parceler-api:$parcelerVersion"
     annotationProcessor "org.parceler:parceler:$parcelerVersion"
     compile 'net.cachapa.expandablelayout:expandablelayout:2.9.1'
+    compile 'com.arello-mobile:moxy-app-compat:1.5.3'
 }
 
 buildscript {

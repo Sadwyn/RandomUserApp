@@ -9,11 +9,13 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.user_list_recycler, 1);
+        sViewsWithIds.put(R.id.my_toolbar, 1);
         sViewsWithIds.put(R.id.progressBarFirstLoad, 2);
+        sViewsWithIds.put(R.id.user_list_recycler, 3);
     }
     // views
-    private final android.widget.FrameLayout mboundView0;
+    private final android.widget.RelativeLayout mboundView0;
+    public final android.support.v7.widget.Toolbar myToolbar;
     public final android.widget.ProgressBar progressBarFirstLoad;
     public final android.support.v7.widget.RecyclerView userListRecycler;
     // variables
@@ -23,11 +25,12 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
 
     public ActivityMainBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds);
-        this.mboundView0 = (android.widget.FrameLayout) bindings[0];
+        final Object[] bindings = mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds);
+        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.myToolbar = (android.support.v7.widget.Toolbar) bindings[1];
         this.progressBarFirstLoad = (android.widget.ProgressBar) bindings[2];
-        this.userListRecycler = (android.support.v7.widget.RecyclerView) bindings[1];
+        this.userListRecycler = (android.support.v7.widget.RecyclerView) bindings[3];
         setRootTag(root);
         // listeners
         invalidateAll();

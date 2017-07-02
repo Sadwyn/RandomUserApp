@@ -9,16 +9,17 @@ public class ActivityDetailBinding extends android.databinding.ViewDataBinding  
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.big_user_photo, 2);
-        sViewsWithIds.put(R.id.country_text, 3);
-        sViewsWithIds.put(R.id.location, 4);
-        sViewsWithIds.put(R.id.street, 5);
-        sViewsWithIds.put(R.id.city, 6);
-        sViewsWithIds.put(R.id.state, 7);
-        sViewsWithIds.put(R.id.postcode, 8);
-        sViewsWithIds.put(R.id.phoneText, 9);
-        sViewsWithIds.put(R.id.phoneTextMobile, 10);
-        sViewsWithIds.put(R.id.email, 11);
+        sViewsWithIds.put(R.id.my_toolbar_detail, 2);
+        sViewsWithIds.put(R.id.big_user_photo, 3);
+        sViewsWithIds.put(R.id.country_text, 4);
+        sViewsWithIds.put(R.id.location, 5);
+        sViewsWithIds.put(R.id.street, 6);
+        sViewsWithIds.put(R.id.city, 7);
+        sViewsWithIds.put(R.id.state, 8);
+        sViewsWithIds.put(R.id.postcode, 9);
+        sViewsWithIds.put(R.id.phoneText, 10);
+        sViewsWithIds.put(R.id.phoneTextMobile, 11);
+        sViewsWithIds.put(R.id.email, 12);
     }
     // views
     public final android.widget.ImageView bigUserPhoto;
@@ -26,7 +27,8 @@ public class ActivityDetailBinding extends android.databinding.ViewDataBinding  
     public final android.widget.TextView countryText;
     public final android.widget.TextView email;
     public final android.widget.TextView location;
-    private final android.widget.ScrollView mboundView0;
+    private final android.widget.LinearLayout mboundView0;
+    public final android.support.v7.widget.Toolbar myToolbarDetail;
     public final android.widget.TextView name;
     public final android.widget.TextView phoneText;
     public final android.widget.TextView phoneTextMobile;
@@ -41,21 +43,22 @@ public class ActivityDetailBinding extends android.databinding.ViewDataBinding  
 
     public ActivityDetailBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds);
-        this.bigUserPhoto = (android.widget.ImageView) bindings[2];
-        this.city = (android.widget.TextView) bindings[6];
-        this.countryText = (android.widget.TextView) bindings[3];
-        this.email = (android.widget.TextView) bindings[11];
-        this.location = (android.widget.TextView) bindings[4];
-        this.mboundView0 = (android.widget.ScrollView) bindings[0];
+        final Object[] bindings = mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds);
+        this.bigUserPhoto = (android.widget.ImageView) bindings[3];
+        this.city = (android.widget.TextView) bindings[7];
+        this.countryText = (android.widget.TextView) bindings[4];
+        this.email = (android.widget.TextView) bindings[12];
+        this.location = (android.widget.TextView) bindings[5];
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.myToolbarDetail = (android.support.v7.widget.Toolbar) bindings[2];
         this.name = (android.widget.TextView) bindings[1];
         this.name.setTag(null);
-        this.phoneText = (android.widget.TextView) bindings[9];
-        this.phoneTextMobile = (android.widget.TextView) bindings[10];
-        this.postcode = (android.widget.TextView) bindings[8];
-        this.state = (android.widget.TextView) bindings[7];
-        this.street = (android.widget.TextView) bindings[5];
+        this.phoneText = (android.widget.TextView) bindings[10];
+        this.phoneTextMobile = (android.widget.TextView) bindings[11];
+        this.postcode = (android.widget.TextView) bindings[9];
+        this.state = (android.widget.TextView) bindings[8];
+        this.street = (android.widget.TextView) bindings[6];
         setRootTag(root);
         // listeners
         invalidateAll();

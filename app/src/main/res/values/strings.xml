@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">RandomUserTest</string>
+    <string name="app_name">ProvectusTest</string>
     <string name="gender">Gender: %s </string>
-
     <string name="city">City: %s</string>
     <string name="street">Street: %s</string>
     <string name="state">State:    %s</string>
     <string name="postcode">Postcode:    %s</string>
+    <string name="country">Country</string>
+    <string name="location">Location</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
 </resources>
