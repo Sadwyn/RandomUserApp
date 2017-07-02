@@ -1,0 +1,110 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:1:1-29:12
+	package
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:3:5-49
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:7:5-27:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\481f6074328e2cdfb84c28a430a07787eaf660a9\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadwyn\.android\build-cache\d82fc5d6d90cea208809ca07aa54984c8a5a0d36\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sadwyn\.android\build-cache\383dc9ecfb55ebb14d07d6c5fb578bf009fd93b7\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\d4dc2b89d803d7a4110e8fb721777aa48654be9d\output\AndroidManifest.xml:26:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Sadwyn\.android\build-cache\677da658d8e2a387258f745bd3d0cba2bfb2912d\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sadwyn\.android\build-cache\3864503797e1fc86fe349177a1d7a2f67c71b7c0\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sadwyn\.android\build-cache\fa3a1a529c7e46e33ea6117d96584937c327b0b5\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sadwyn\.android\build-cache\2e39feab90595b77469d6ffa7f0b7c47197ceccf\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sadwyn\.android\build-cache\588838890a775a3d67a3effdc9f1ebad29bdaf40\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sadwyn\.android\build-cache\5ff8d790121492be278a3c32dc5bc41ca3629e87\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sadwyn\.android\build-cache\1955b5d9c247b532299f3770d76f91f4b95543dc\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:10:9-41
+	android:supportsRtl
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:12:9-35
+	android:roundIcon
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:11:9-54
+	android:allowBackup
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:9:9-43
+	android:theme
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.andersen.sadwyn.randomusertest.ui.activity.MainActivity
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:15:9-22:20
+	android:screenOrientation
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:17:13-49
+	android:label
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:16:13-45
+	android:name
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:15:19-59
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:18:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.andersen.sadwyn.randomusertest.ui.activity.DetailActivity
+ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:24:9-25:51
+	android:screenOrientation
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:25:13-49
+	android:name
+		ADDED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml:24:19-61
+uses-sdk
+INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\18002ef49b7869ff679a7c4acefc1821de2c6379\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\481f6074328e2cdfb84c28a430a07787eaf660a9\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadwyn\.android\build-cache\d82fc5d6d90cea208809ca07aa54984c8a5a0d36\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sadwyn\.android\build-cache\383dc9ecfb55ebb14d07d6c5fb578bf009fd93b7\output\AndroidManifest.xml:20:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Sadwyn\.android\build-cache\f009aa8e272094e82a39182f0f750fb881b755be\output\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\d4dc2b89d803d7a4110e8fb721777aa48654be9d\output\AndroidManifest.xml:20:5-43
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Sadwyn\.android\build-cache\677da658d8e2a387258f745bd3d0cba2bfb2912d\output\AndroidManifest.xml:5:5-7:41
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.1] C:\Users\Sadwyn\.android\build-cache\575a4b142c7b88cc7198c0c812a0efafa4ec5d91\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Sadwyn\.android\build-cache\b821b3f8cda433ee919028ee4368c1cef3795a7d\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Sadwyn\.android\build-cache\b54c164d6e05b24212417f89a81e1fb4af9eb6c3\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sadwyn\.android\build-cache\3864503797e1fc86fe349177a1d7a2f67c71b7c0\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sadwyn\.android\build-cache\fa3a1a529c7e46e33ea6117d96584937c327b0b5\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sadwyn\.android\build-cache\2e39feab90595b77469d6ffa7f0b7c47197ceccf\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sadwyn\.android\build-cache\588838890a775a3d67a3effdc9f1ebad29bdaf40\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sadwyn\.android\build-cache\5ff8d790121492be278a3c32dc5bc41ca3629e87\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sadwyn\.android\build-cache\1955b5d9c247b532299f3770d76f91f4b95543dc\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\481f6074328e2cdfb84c28a430a07787eaf660a9\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidTools\AndroidProjects\RandomUserTest\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\18002ef49b7869ff679a7c4acefc1821de2c6379\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\481f6074328e2cdfb84c28a430a07787eaf660a9\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadwyn\.android\build-cache\d82fc5d6d90cea208809ca07aa54984c8a5a0d36\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sadwyn\.android\build-cache\383dc9ecfb55ebb14d07d6c5fb578bf009fd93b7\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\d4dc2b89d803d7a4110e8fb721777aa48654be9d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sadwyn\.android\build-cache\3864503797e1fc86fe349177a1d7a2f67c71b7c0\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sadwyn\.android\build-cache\fa3a1a529c7e46e33ea6117d96584937c327b0b5\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sadwyn\.android\build-cache\2e39feab90595b77469d6ffa7f0b7c47197ceccf\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sadwyn\.android\build-cache\588838890a775a3d67a3effdc9f1ebad29bdaf40\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sadwyn\.android\build-cache\5ff8d790121492be278a3c32dc5bc41ca3629e87\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sadwyn\.android\build-cache\1955b5d9c247b532299f3770d76f91f4b95543dc\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\18002ef49b7869ff679a7c4acefc1821de2c6379\output\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sadwyn\.android\build-cache\18002ef49b7869ff679a7c4acefc1821de2c6379\output\AndroidManifest.xml:23:9-47
